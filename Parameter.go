@@ -1,52 +1,80 @@
 package apidoc
 
 type Parameter struct {
-	// Name is the name of the parameter
-	Name string `json:"name"`
+	name     string
+	title    string
+	content  string
+	dataType string
+	location string
+	required bool
+	// default_         string
+	// example          Example
+	// enum            []string
+	// format          string
+	// pattern         string
+	// minimum         string
+	// maximum         string
+	// minLength       string
+	// maxLength       string
+	// deprecated      bool
+	// allowEmptyValue bool
+	// style           string
+}
 
-	// Type is the type of the parameter, e.g. string, int, bool
-	Type string `json:"type"`
+func NewParameter() *Parameter {
+	return &Parameter{}
+}
 
-	// ShortDescription is the short description of the parameter
-	ShortDescription string `json:"short_description"`
+func (block *Parameter) GetName() string {
+	return block.name
+}
 
-	// LongDescription is the long description of the parameter
-	LongDescription string `json:"long_description"`
+func (block *Parameter) SetName(name string) *Parameter {
+	block.name = name
+	return block
+}
 
-	// Location is the location of the parameter
-	// Possible values: query, header, path, cookie
-	Location string `json:"location"`
+func (block *Parameter) GetTitle() string {
+	return block.title
+}
 
-	// Required is true if the parameter is required
-	Required bool `json:"required"`
+func (block *Parameter) SetTitle(title string) *Parameter {
+	block.title = title
+	return block
+}
 
-	// Default is the default value of the parameter
-	Default string `json:"default"`
+func (block *Parameter) GetContent() string {
+	return block.content
+}
 
-	// Example is the example of the parameter (used for documentation)
-	Example Example `json:"example"`
+func (block *Parameter) SetContent(content string) *Parameter {
+	block.content = content
+	return block
+}
 
-	// Enum is the enum of the parameter
-	Enum []string `json:"enum"`
+func (block *Parameter) GetType() string {
+	return block.dataType
+}
 
-	// Format is the format of the parameter
-	Format string `json:"format"`
+func (block *Parameter) SetType(dataType string) *Parameter {
+	block.dataType = dataType
+	return block
+}
 
-	// Pattern is the pattern of the parameter
-	Pattern string `json:"pattern"`
+func (block *Parameter) GetLocation() string {
+	return block.location
+}
 
-	// Minimum is the minimum value of the parameter
-	Minimum string `json:"minimum"`
+func (block *Parameter) SetLocation(location string) *Parameter {
+	block.location = location
+	return block
+}
 
-	// Maximum is the maximum value of the parameter
-	Maximum string `json:"maximum"`
+func (block *Parameter) GetRequired() bool {
+	return block.required
+}
 
-	// MinLength is the minimum length of the parameter
-	MinLength string `json:"minLength"`
-
-	// MaxLength is the maximum length of the parameter
-	MaxLength string `json:"maxLength"`
-
-	// Deprecated is true if the parameter is deprecated
-	Deprecated bool `json:"deprecated"`
+func (block *Parameter) SetRequired(required bool) *Parameter {
+	block.required = required
+	return block
 }

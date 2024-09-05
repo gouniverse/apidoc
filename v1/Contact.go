@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type Contact struct {
 	// Name is the identificating name of the contact person/organization.

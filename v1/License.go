@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type License struct {
 	// Name is the name of the license

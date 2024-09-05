@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type Definition struct {
 	// Title is the title of the API

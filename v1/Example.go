@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type Example struct {
 	// Name is the name of the example

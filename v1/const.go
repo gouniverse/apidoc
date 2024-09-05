@@ -1,8 +1,4 @@
-package blocks
-
-const TYPE_GROUP = "group"
-const TYPE_INFO = "info"
-const TYPE_ENDPOINT = "endpoint"
+package v1
 
 const LOCATION_COOKIE = `cookie`
 const LOCATION_HEADER = `header`

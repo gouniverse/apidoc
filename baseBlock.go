@@ -1,4 +1,4 @@
-package blocks
+package apidoc
 
 type baseBlock struct {
 	blockType string

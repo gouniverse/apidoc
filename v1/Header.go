@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type Header struct {
 	// Name is the name of the header

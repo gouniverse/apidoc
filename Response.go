@@ -1,21 +1,62 @@
 package apidoc
 
 type Response struct {
-	// Name is the name of the response
-	Name string `json:"name"`
+	title   string
+	content string
 
-	// ShortDescription is the short description of the response
-	ShortDescription string `json:"short_description"`
+	// ContentType is the content type of the response e.g. application/json
+	contentType string
 
-	// LongDescription is the long description of the response
-	LongDescription string `json:"long_description"`
+	statusCode string
 
-	// StatusCode is the status code of the response, e.g. 200, 400
-	StatusCode string `json:"statusCode"`
+	example Example
+}
 
-	// Type is the type of the response, i.e application/json, text/plain, etc.
-	Type string `json:"type"`
+func NewResponse() *Response {
+	return &Response{}
+}
 
-	// Example is the example of the response
-	Example Example `json:"example"`
+func (block *Response) GetTitle() string {
+	return block.title
+}
+
+func (block *Response) SetTitle(title string) *Response {
+	block.title = title
+	return block
+}
+
+func (block *Response) GetContent() string {
+	return block.content
+}
+
+func (block *Response) SetContent(content string) *Response {
+	block.content = content
+	return block
+}
+
+func (block *Response) GetStatusCode() string {
+	return block.statusCode
+}
+
+func (block *Response) SetStatusCode(statusCode string) *Response {
+	block.statusCode = statusCode
+	return block
+}
+
+func (block *Response) GetContentType() string {
+	return block.contentType
+}
+
+func (block *Response) SetContentType(contentType string) *Response {
+	block.contentType = contentType
+	return block
+}
+
+func (block *Response) GetExample() Example {
+	return block.example
+}
+
+func (block *Response) SetExample(example Example) *Response {
+	block.example = example
+	return block
 }

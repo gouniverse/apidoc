@@ -1,4 +1,4 @@
-package blocks
+package apidoc
 
 type BlockInterface interface {
 	GetType() string

@@ -1,4 +1,4 @@
-package apidoc
+package v1
 
 type Endpoint struct {
 	// Method is the HTTP method of the endpoint (e.g. GET, POST, PUT, DELETE)

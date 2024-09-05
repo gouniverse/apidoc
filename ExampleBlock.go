@@ -1,6 +1,11 @@
-package blocks
+package apidoc
 
+// == TYPE ====================================================================
+
+// ExampleBlock represents a block with a source code example
+// it is used to add an example section to the documentation
 type Example struct {
+	baseBlock
 	title          string
 	content        string
 	sourceLanguage string
@@ -8,7 +13,11 @@ type Example struct {
 }
 
 func NewExample() *Example {
-	return &Example{}
+	return &Example{
+		baseBlock: baseBlock{
+			blockType: TYPE_EXAMPLE,
+		},
+	}
 }
 
 func (block *Example) GetTitle() string {
