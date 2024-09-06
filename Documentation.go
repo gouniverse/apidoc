@@ -62,14 +62,20 @@ func NewDocumentation() *Documentation {
 
 // == METHODS =================================================================
 
-func (doc *Documentation) IsThemeDark() bool {
+func (doc *Documentation) IsThemeDark(theme string) bool {
+	if theme == "" {
+		theme = doc.theme
+	}
 	keys := lo.Map(doc.themesDark, func(t struct{ Key, Name string }, _ int) string { return t.Key })
-	return slices.Contains(keys, doc.theme)
+	return slices.Contains(keys, theme)
 }
 
-func (doc *Documentation) IsThemeLight() bool {
+func (doc *Documentation) IsThemeLight(theme string) bool {
+	if theme == "" {
+		theme = doc.theme
+	}
 	keys := lo.Map(doc.themesLight, func(t struct{ Key, Name string }, _ int) string { return t.Key })
-	return slices.Contains(keys, doc.theme)
+	return slices.Contains(keys, theme)
 }
 
 // == SETTERS & GETTERS =======================================================
