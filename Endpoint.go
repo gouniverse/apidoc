@@ -89,7 +89,7 @@ func (block *Endpoint) GetDescription() string {
 
 // SetDescription is an alias for SetContent
 func (block *Endpoint) SetDescription(description string) *Endpoint {
-	return block.SetDescription(description)
+	return block.SetContent(description)
 }
 
 func (block *Endpoint) GetMethod() string {
