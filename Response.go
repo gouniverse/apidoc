@@ -1,19 +1,59 @@
 package apidoc
 
+// == TYPE ====================================================================
+
+// Response represents a block with a title and content
+// it is used to add a response section to an endpoint
 type Response struct {
-	title   string
+	baseBlock
+
+	// title is the title of the response
+	// eg. Success, Error
+	title string
+
+	// content is the content/description of the response
+	// common markdown syntax is supported
 	content string
 
-	// ContentType is the content type of the response e.g. application/json
+	// contentType is the content type of the response e.g. application/json
+	// best use the predefined content types constants defined in this package
 	contentType string
 
+	// statusCode is the status code of the response
+	// eg. 200
 	statusCode string
 
+	// example is the example of the response
 	example Example
 }
 
+var _ BlockInterface = (*Response)(nil) // ensure Response implements BlockInterface
+
+// == CONSTRUCTOR =============================================================
+
 func NewResponse() *Response {
 	return &Response{}
+}
+
+// == SETTERS & GETTERS =======================================================
+
+func (block *Response) GetContent() string {
+	return block.content
+}
+
+func (block *Response) SetContent(content string) *Response {
+	block.content = content
+	return block
+}
+
+// GetDescription is an alias for GetContent
+func (block *Response) GetDescription() string {
+	return block.GetContent()
+}
+
+// SetDescription is an alias for SetContent
+func (block *Response) SetDescription(description string) *Response {
+	return block.SetContent(description)
 }
 
 func (block *Response) GetTitle() string {
@@ -22,15 +62,6 @@ func (block *Response) GetTitle() string {
 
 func (block *Response) SetTitle(title string) *Response {
 	block.title = title
-	return block
-}
-
-func (block *Response) GetContent() string {
-	return block.content
-}
-
-func (block *Response) SetContent(content string) *Response {
-	block.content = content
 	return block
 }
 

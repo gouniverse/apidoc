@@ -1,14 +1,45 @@
 package apidoc
 
-const TYPE_GROUP = "group"
-const TYPE_INFO = "info"
-const TYPE_ENDPOINT = "endpoint"
-const TYPE_EXAMPLE = "example"
+// Content types
+const CONTENT_TYPE_JSON = "application/json"
+const CONTENT_TYPE_FORM = "application/x-www-form-urlencoded"
+const CONTENT_TYPE_MULTIPART = "multipart/form-data"
+const CONTENT_TYPE_TEXT = "text/plain"
 
-const LOCATION_COOKIE = `cookie`
-const LOCATION_HEADER = `header`
-const LOCATION_PATH = `path`
-const LOCATION_QUERY = `query`
+// Block Types
+const BLOCK_TYPE_GROUP = "group"
+const BLOCK_TYPE_ENDPOINT = "endpoint"
+const BLOCK_TYPE_EXAMPLE = "example"
+const BLOCK_TYPE_PARAMETER = "parameter"
+const BLOCK_TYPE_RESPONSE = "response"
+const BLOCK_TYPE_SECTION = "section"
+
+// Locations
+
+// PARAMETER_LOCATION_PATH represents a parameter located
+// in the URL path (e.g. /users/:id).
+const PARAMETER_LOCATION_PATH = "path"
+
+// PARAMETER_LOCATION_QUERY represents a parameter located
+// in the URL query string (e.g. ?id=1).
+const PARAMETER_LOCATION_QUERY = "query"
+
+// PARAMETER_LOCATION_HEADER represents a parameter located
+// in the HTTP request header (e.g. Authorization).
+const PARAMETER_LOCATION_HEADER = "header"
+
+// PARAMETER_LOCATION_COOKIE represents a parameter located
+// in the HTTP request cookie (e.g. token).
+const PARAMETER_LOCATION_COOKIE = "cookie"
+
+// PARAMETER_LOCATION_FORM represents a parameter located
+// in the HTTP request body as form data (e.g. name=John).
+const PARAMETER_LOCATION_FORM = "form"
+
+// PARAMETER_LOCATION_BODY represents a parameter located
+// in the HTTP request body as a JSON payload or other
+// structured data (e.g. {"name": "John"}).
+const PARAMETER_LOCATION_BODY = "body"
 
 // Light themes
 const THEME_DEFAULT = "bootstrap"

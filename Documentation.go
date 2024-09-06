@@ -10,7 +10,12 @@ import (
 
 type Documentation struct {
 	// title is the title of the documentation
+	// if not set, by default "API Documentation" will be used
 	title string
+
+	// description is the description of the documentation
+	// common markdown syntax is supported
+	description string
 
 	// logo is the logo of the documentation, can be a local or remote URL or HTML
 	logo string
@@ -22,19 +27,28 @@ type Documentation struct {
 	// handlerURL is the URL to the handler serving the documentation (eg. /docs)
 	handlerURL string
 
+	// theme is the theme of the documentation
+	// this is a dynamic property that is set by the handler
+	// if not set, the default theme will be used
 	theme string
 
+	// themesLight are the light themes of the documentation
 	themesLight []struct {
 		Key  string
 		Name string
 	}
 
+	// themesDark are the dark themes of the documentation
 	themesDark []struct {
 		Key  string
 		Name string
 	}
 
 	// blocks are the blocks of the documentation
+	// can be one of the following:
+	// - InfoBlock (individual block with a title and content)
+	// - GroupBlock (block with a title and a list of multiple InfoBlock)
+	// - EndpointBlock
 	blocks []BlockInterface
 }
 
@@ -71,6 +85,15 @@ func (doc *Documentation) SetBlocks(blocks []BlockInterface) *Documentation {
 
 func (doc *Documentation) AddBlock(block BlockInterface) *Documentation {
 	doc.blocks = append(doc.blocks, block)
+	return doc
+}
+
+func (doc *Documentation) GetDescription() string {
+	return doc.description
+}
+
+func (doc *Documentation) SetDescription(description string) *Documentation {
+	doc.description = description
 	return doc
 }
 
