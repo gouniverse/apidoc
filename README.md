@@ -91,6 +91,26 @@ No external dependencies are required (npm, yarn, etc).
 
 ![apidoc-theme-simplex](./screenshots/apidoc-theme-simplex.png)
 
+- sketchy
+
+![apidoc-theme-sketchy](./screenshots/apidoc-theme-sketchy.png)
+
+- spacelab
+
+![apidoc-theme-spacelab](./screenshots/apidoc-theme-spacelab.png)
+
+- united
+
+![apidoc-theme-united](./screenshots/apidoc-theme-united.png)
+
+- yeti
+
+![apidoc-theme-yeti](./screenshots/apidoc-theme-yeti.png)
+
+- zephyr
+
+![apidoc-theme-zephyr](./screenshots/apidoc-theme-zephyr.png)
+
 ### Dark Themes
 
 ![apidoc-theme-slate](./screenshots/apidoc-theme-slate.png)
