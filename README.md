@@ -31,6 +31,10 @@ No external dependencies are required (npm, yarn, etc).
 - Declarative Approach: Define your API's structure and content using Go code, making it more intuitive and easier to maintain.
 - Extensible: Easily add custom extensions or features to your documentation.
 
+## Why Use Api Doc and Demo
+
+- https://lesichkov.co.uk/blog/post/20240907034242947477617418085667/apidoc-a-humane-alternative-to-complex-api-documentation
+
 ## Supported Themes
 
 ### Light Themes
