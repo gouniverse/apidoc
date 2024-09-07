@@ -48,6 +48,7 @@ No external dependencies are required (npm, yarn, etc).
 ![apidoc-theme-cosmo](./screenshots/apidoc-theme-cosmo.png)
 
 - flatly
+
 ![apidoc-theme-flatly](./screenshots/apidoc-theme-flatly.png)
 
 - journal
@@ -69,6 +70,10 @@ No external dependencies are required (npm, yarn, etc).
 - minty
 
 ![apidoc-theme-minty](./screenshots/apidoc-theme-minty.png)
+
+- morph
+
+![apidoc-theme-morph](./screenshots/apidoc-theme-morph.png)
 
 - pulse
 
