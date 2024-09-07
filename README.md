@@ -148,3 +148,4 @@ No external dependencies are required (npm, yarn, etc).
 - Themes: [https://bootswatch.com](https://bootswatch.com)
 - Source Highlight: [https://highlightjs.org/](https://highlightjs.org/)
 - Screen shots: [https://www.site-shot.com](https://www.site-shot.com)
+- Demo Icon: [Smallworldsocial, Public domain, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Api_logo.jpg)
