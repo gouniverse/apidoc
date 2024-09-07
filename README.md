@@ -30,3 +30,7 @@ No external dependencies are required (npm, yarn, etc).
 - Steep Learning Curve: Benefit from a shallower learning curve if you're already proficient in Go.
 - Declarative Approach: Define your API's structure and content using Go code, making it more intuitive and easier to maintain.
 - Extensible: Easily add custom extensions or features to your documentation.
+
+## Supported Themes
+
+![theme-default](./screenshots/theme-default.png)
