@@ -33,4 +33,62 @@ No external dependencies are required (npm, yarn, etc).
 
 ## Supported Themes
 
-![theme-default](./screenshots/theme-default.png)
+### Light Themes
+
+- default
+
+![apidoc-theme-default](./screenshots/apidoc-theme-default.png)
+
+- cerulean
+
+![apidoc-theme-cerulean](./screenshots/apidoc-theme-cerulean.png)
+
+- cosmo
+
+![apidoc-theme-cosmo](./screenshots/apidoc-theme-cosmo.png)
+
+- flatly
+![apidoc-theme-flatly](./screenshots/apidoc-theme-flatly.png)
+
+- journal
+
+![apidoc-theme-journal](./screenshots/apidoc-theme-journal.png)
+
+- litera
+
+![apidoc-theme-litera](./screenshots/apidoc-theme-litera.png)
+
+- lux
+
+![apidoc-theme-lux](./screenshots/apidoc-theme-lux.png)
+
+- materia
+
+![apidoc-theme-materia](./screenshots/apidoc-theme-materia.png)
+
+- minty
+
+![apidoc-theme-minty](./screenshots/apidoc-theme-minty.png)
+
+- pulse
+
+![apidoc-theme-pulse](./screenshots/apidoc-theme-pulse.png)
+
+- quartz
+
+![apidoc-theme-quartz](./screenshots/apidoc-theme-quartz.png)
+
+- sandstone
+
+![apidoc-theme-sandstone](./screenshots/apidoc-theme-sandstone.png)
+
+- simplex
+
+![apidoc-theme-simplex](./screenshots/apidoc-theme-simplex.png)
+
+### Dark Themes
+
+![apidoc-theme-slate](./screenshots/apidoc-theme-slate.png)
+![apidoc-theme-spacelab](./screenshots/apidoc-theme-spacelab.png)
+![apidoc-theme-united](./screenshots/apidoc-theme-united.png)
+![apidoc-theme-yeti](./screenshots/apidoc-theme-yeti.png)
