@@ -113,7 +113,34 @@ No external dependencies are required (npm, yarn, etc).
 
 ### Dark Themes
 
+- cyborg
+
+![apidoc-theme-cyborg](./screenshots/apidoc-theme-cyborg.png)
+
+- darkly
+
+![apidoc-theme-darkly](./screenshots/apidoc-theme-darkly.png)
+
+- slate
+
 ![apidoc-theme-slate](./screenshots/apidoc-theme-slate.png)
-![apidoc-theme-spacelab](./screenshots/apidoc-theme-spacelab.png)
-![apidoc-theme-united](./screenshots/apidoc-theme-united.png)
-![apidoc-theme-yeti](./screenshots/apidoc-theme-yeti.png)
+
+- solar
+
+![apidoc-theme-solar](./screenshots/apidoc-theme-solar.png)
+
+- superhero
+
+![apidoc-theme-superhero](./screenshots/apidoc-theme-superhero.png)
+
+- vapor
+
+![apidoc-theme-vapor](./screenshots/apidoc-theme-vapor.png)
+
+
+## Credits
+
+- UI Framework: [https://getbootstrap.com](https://getbootstrap.com)
+- Themes: [https://bootswatch.com](https://bootswatch.com)
+- Source Highlight: [https://highlightjs.org/](https://highlightjs.org/)
+- Screen shots: [https://www.site-shot.com](https://www.site-shot.com)
