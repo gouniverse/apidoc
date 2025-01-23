@@ -1,4 +1,7 @@
-# Api Doc <a href="https://gitpod.io/#https://github.com/gouniverse/apidoc" style="float:right:"><img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" loading="lazy"></a>
+# Api Doc 
+<a href="https://gitpod.io/#https://github.com/gouniverse/apidoc" style="float:right:"><img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" loading="lazy"></a>
+
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/gouniverse/apidoc)
 
 ![tests](https://github.com/gouniverse/apidoc/workflows/tests/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gouniverse/apidoc)](https://goreportcard.com/report/github.com/gouniverse/apidoc)
